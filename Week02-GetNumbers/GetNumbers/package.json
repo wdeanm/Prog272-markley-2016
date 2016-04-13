@@ -27,8 +27,5 @@
     "grunt-jscs": "^2.8.0",
     "jasmine-core": "^2.4.1",
     "jasmine-spec-reporter": "^2.4.0"
-  },
-  "dependencies": {
-    "require": "^2.4.20"
   }
 }
