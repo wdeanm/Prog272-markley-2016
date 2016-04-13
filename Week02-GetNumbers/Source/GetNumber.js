@@ -5,7 +5,7 @@ var getNumbers = {
         return 1;
     },
 
-    getTwo: function () {
+    getTwo: function() {
         'use strict';
         return 2;
     },
@@ -15,7 +15,7 @@ var getNumbers = {
         return 3;
     },
 
-    getFour: function () {
+    getFour: function() {
         'use strict';
         return 4;
     },
@@ -25,7 +25,7 @@ var getNumbers = {
         return 5;
     },
 
-    getSix: function () {
+    getSix: function() {
         'use strict';
         return 6;
     },
@@ -35,12 +35,12 @@ var getNumbers = {
         return 7;
     },
 
-    getEight: function () {
+    getEight: function() {
         'use strict';
         return 8;
     },
-    
-    getNine: function () {
+
+    getNine: function() {
         'use strict';
         return 9;
     }
