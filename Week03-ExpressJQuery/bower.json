@@ -1,0 +1,21 @@
+{
+  "name": "Week03-ExpressJQuery",
+  "description": "jquery demo",
+  "main": "",
+  "authors": [
+    "W. Dean at BC>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/wdeanm/prog272-markley-2016",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3"
+  }
+}
