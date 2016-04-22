@@ -27,6 +27,11 @@ var MyObject = (function() {
             "city": "Paris",
             "country": "France"
         };
+        for (var property in marie) {
+            if (marie.hasOwnProperty(property)) {
+                $("#myList").append('<li>' + marie[property] + '</li>');
+            }
+        }
     }
 
     MyObject.prototype.readyCalled = function() {
@@ -41,3 +46,4 @@ $(document).ready(function() {
     var myObject = new MyObject();
     myObject.readyCalled();
 });
+
