@@ -1,0 +1,18 @@
+{
+  "name": "Week04-ExpressRoutes",
+  "description": "routes in express",
+  "main": "bin/www",
+  "authors": [
+    "Dean"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "routing",
+    "express"
+  ],
+  "homepage": "https://github.com/wdeanm/prog272-markley-2016",
+  "moduleType": [],
+  "dependencies": {
+    "jquery": "^2.2.3"
+  }
+}
