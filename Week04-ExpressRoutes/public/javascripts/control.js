@@ -17,6 +17,7 @@ $(document).ready(function () {
         } )
 
     }
+
     function readJson() {
         console.log('callRead called');
         $.getJSON('name.json', function(result){
@@ -25,6 +26,7 @@ $(document).ready(function () {
 
         } )
     }
+
     function readQux() {
         console.log('callQux called');
         $.getJSON('/qux', function(result){
