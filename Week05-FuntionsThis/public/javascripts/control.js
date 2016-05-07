@@ -10,9 +10,13 @@ var getThisAnonymous = function(){
     return this;
 };
 
-var myObject = function () {
-
+var myObject = function (){
+    return this.getThis;
 };
+
+var myFunction = function () {
+    return this;
+}
 
 $(document).ready(function() { 'use strict';
 });

@@ -35,13 +35,13 @@ describe('Elvenware Simple Plain Suite', function () {
         expect(result).toBe(myFunction);
     });
 
-    it('expects a constructor function called MyFunction to have a public method called getThis that shows this is MyFunction', function() {
+    fit('expects a constructor function called MyFunction to have a public method called getThis that shows this is MyFunction', function() {
         var myFunction = new MyFunction();
         var result = myFunction.getThis();
         expect(result).toBe(myFunction);
     });
 
-    fit('shows you can set the this operator for getThis to myObject', function() {
+    it('shows you can set the this operator for getThis to myObject', function() {
         var result = getThis.call(myObject);
         expect(result).toBe(myObject);
     });
