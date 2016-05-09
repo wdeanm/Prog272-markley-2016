@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #w. Dean Markley
 
 This is my readme.
@@ -8,4 +9,9 @@ This is my readme.
 - [www.google.com](http://www.google.com)
 
   [solar-start]: http://www.ccalvert.net/books/CloudNotes/Assignments/AngularSolarStarter.html
+=======
+## Week 06 Branch
+
+  - [Angular Solar Starter Tests Assignment][solar-start-test]
+>>>>>>> week06
 
