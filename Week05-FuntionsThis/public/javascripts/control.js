@@ -17,6 +17,27 @@ var myObject = {
     }
 };
 
+var myFunction = {
+    getThis: function() {
+        'use strict';
+        return this;
+    }
+};
+function MyFunction() {
+    'use strict'
+    MyFunction.prototype.getThis = function ()
+
+    {
+      return this;
+    }
+};
+
+function getThisStrict(){
+    'use strict'
+    return this;
+}
+
+
 $(document).ready(function() { 'use strict';
 
 });
