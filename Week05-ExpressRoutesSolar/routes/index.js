@@ -16,7 +16,10 @@ router.get('/renewables', function(request, response) {
       response.send ({ result: '404'});
     }
     else {
-      console.log(data);
+      var json = JSON.parse(data);
+      response.send({result: 'Success', renewables: json});
+
+     // console.log(data);
     }
 
   /*  response.send ({ result: 'Success', renewables: data}) */
