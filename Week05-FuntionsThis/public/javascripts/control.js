@@ -10,10 +10,7 @@ var getThisAnonymous = function(){
     return this;
 };
 
-<<<<<<< HEAD
-var myObject = function (){
-    return this.getThis;
-=======
+
 var myObject = {
     getThis: function() {
         'use strict';
@@ -26,8 +23,8 @@ var myFunction = {
         'use strict';
         return this;
     }
->>>>>>> week06
 };
+
 function MyFunction() {
     'use strict'
     MyFunction.prototype.getThis = function ()
