@@ -2,7 +2,7 @@
  * Created by charlie on 10/7/15.
  */
 
-describe('Elvenware Simple Plain Suite', function () {
+fdescribe('Elvenware Simple Plain Suite', function () {
 
     'use strict';
 
@@ -41,7 +41,7 @@ describe('Elvenware Simple Plain Suite', function () {
         expect(result).toBe(myFunction);
     });
 
-    fit('shows you can set the this operator for getThis to myObject', function() {
+    it('shows you can set the this operator for getThis to myObject', function() {
         var result = getThis.call(myObject);
         expect(result).toBe(myObject);
     });
