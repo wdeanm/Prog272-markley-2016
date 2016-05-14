@@ -19,14 +19,10 @@ router.get('/renewables', function(request, response) {
       var json = JSON.parse(data);
       //console.log(json);
       response.send({result: 'Success', renewables: json});
-
      // console.log(data);
     }
-
   /*  response.send ({ result: 'Success', renewables: data}) */
-
   });
-
 });
 
 router.get('/renewablesByIndex/:id', function(request, response) {
