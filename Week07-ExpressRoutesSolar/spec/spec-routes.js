@@ -54,7 +54,7 @@ fdescribe('Elvenware Routes Suite', function() {
                 done();
             });
     });
-/*
+
     it('can call renewablesByIndexSorted route with an index and gets energy object as sorted array', function(done) {
         request(app)
             .get('/renewablesByIndexSorted/1')
@@ -72,7 +72,7 @@ fdescribe('Elvenware Routes Suite', function() {
                 done();
             });
     });
-    */
+
 
     it('call renewableByYear and get renewable object with specific year', function(done) {
         request(app)

@@ -23,11 +23,12 @@ router.get('/renewables', function(request, response) {
      // console.log(data);
     }
 
-  /*  response.send ({ result: 'Success', renewables: data}) */
+  //   response.send ({ result: 'Success', renewables: data})
 
   });
-
 });
+
+
 
 router.get('/renewablesByIndex/:id', function(request, response) {
   console.log('Renewables by index called');
@@ -44,10 +45,12 @@ router.get('/renewablesByIndex/:id', function(request, response) {
       // console.log(data);
     }
 
-    /*  response.send ({ result: 'Success', renewables: data}) */
+    //  response.send ({ result: 'Success', renewables: data})
   });
 });
 
+
+/*
 router.get('/renewablesByYear/:id', function(request, response) {
   console.log('Renewables called by year');
 
@@ -59,15 +62,20 @@ router.get('/renewablesByYear/:id', function(request, response) {
     else {
       var json = JSON.parse(data);
       for(var i = 0; i < json.length; i++ ){
-        if (request.params.id === json[i].Year){
-          response.send({result: 'Success', renewables: json[i]});
-          return;
+        if (json[i].year === request.params.id)
+        response.send({
+          result: 'Success',
+          renewables: json[i]
         }
+        return;
       }
-      response.send({ result: 'Failure'});
+      response.send({
+        result: 'Failure',
+        renewables: null
+      });
     }
   })
 });
-
+*/
 
 module.exports = router;
