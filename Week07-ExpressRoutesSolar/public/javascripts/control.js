@@ -49,7 +49,7 @@
  //   renewableByIndex
 });*/
 
-define(['jquery'], function($) {
+define(['jquery', 'work'], function($, work) {
     //Do setup work here
 
     function showBar() {
@@ -66,10 +66,10 @@ define(['jquery'], function($) {
         },
         init: function() {
             //console.log(this.color);
-            that = this;
          //   $('#aboutButton').click(about.init);
           //  $('#workButton').click(work.init);
-            $('#elf-view').load('/main', this.setup);
+         //   $('#elf-view').load('/main', this.setup);
+            work.init();
         }
     };
 

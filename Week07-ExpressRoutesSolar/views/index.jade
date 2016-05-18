@@ -1,11 +1,16 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    h1= title
+    p Welcome to #{title}
 
+    block content
+        h1= title
+        p Welcome to #{title}
 
+        #elf-view
 
+//
   button#getRenewable All Renewables
   input#renewableByIndex(type='number', value='2')
   button#getRenewableByIndex Renewable by Index

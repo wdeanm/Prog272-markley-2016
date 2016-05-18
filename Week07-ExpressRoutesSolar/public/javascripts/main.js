@@ -1,4 +1,3 @@
-
 requirejs.config({
     baseUrl: '.',
     paths: {
@@ -12,8 +11,12 @@ requirejs.config({
 });
 
 requirejs(['jquery'], function($) {
-
     requirejs(['bootstrap', "control", 'work', 'about', 'funcObj'], function(bootstrap, control, work, about, funcObj) {
         control.init();
     });
 });
+
+/*
+
+
+ */

@@ -78,4 +78,8 @@ router.get('/renewablesByYear/:id', function(request, response) {
 });
 */
 
+router.get('/:id', function(request, response) {
+  response.render(request.params.id, { title: 'ElfComponent' });
+});
+
 module.exports = router;
