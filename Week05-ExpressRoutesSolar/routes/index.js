@@ -7,9 +7,9 @@ router.get('/', function(req, res, next) { 'use strict';
   res.render('index', { title: 'Week05-ExpressRoutesSolar-Markley' });
 });
 
+
 router.get('/renewables', function(request, response) {
   console.log('Renewables called');
-
   fs.readFile('data/Renewable.json', 'utf8', function (err, data) {
 
     if (err){
@@ -17,16 +17,13 @@ router.get('/renewables', function(request, response) {
     }
     else {
       var json = JSON.parse(data);
-      //console.log(json);
+      console.log(json);
       response.send({result: 'Success', renewables: json});
-
-     // console.log(data);
-    }
-
-  /*  response.send ({ result: 'Success', renewables: data}) */
+      console.log(data);
+   }
+    response.send ({ result: 'Success', renewables: data})
 
   });
-
 });
 
 router.get('/renewablesByIndex/:id', function(request, response) {
