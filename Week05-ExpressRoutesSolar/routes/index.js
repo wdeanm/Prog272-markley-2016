@@ -17,10 +17,10 @@ router.get('/renewables', function(request, response) {
     }
     else {
       var json = JSON.parse(data);
-      //console.log(json);
+      console.log(json);
       response.send({result: 'Success', renewables: json});
 
-     // console.log(data);
+      console.log(data);
     }
 
   /*  response.send ({ result: 'Success', renewables: data}) */

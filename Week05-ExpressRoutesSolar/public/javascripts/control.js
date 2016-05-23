@@ -1,5 +1,5 @@
 $(document).ready(function() { 'use strict';
-    $ ('#getRenewable').click(getRenable)
+    $ ('#getRenewable').click(getRenewables)
     function getrenewable() {
         console.log('getRenewable called')
         $.getJSON('/renewables', function (response) {
