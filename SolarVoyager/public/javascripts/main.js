@@ -6,8 +6,9 @@ requirejs.config({
         control: 'javascripts/control',
         work: 'javascripts/work',
         about: 'javascripts/about',
-        renewables: 'javascripts/renewables',
-        renewables: 'javascripts/renewablesbyindex'
+        renewables: 'javascripts/renewables/renewables',
+        renewablesByIndex: 'javascripts/renewables/renewables-index',
+        renewablesBYYear: 'javascripts/renewables/renewables-year'
     }
 });
 
