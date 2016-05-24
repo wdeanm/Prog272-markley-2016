@@ -6,7 +6,8 @@ requirejs.config({
         control: 'javascripts/control',
         work: 'javascripts/work',
         about: 'javascripts/about',
-        funcObj: 'javascripts/func-obj'
+        renewables: 'javascripts/renewables',
+        renewables: 'javascripts/renewablesbyindex'
     }
 });
 
