@@ -1,8 +1,8 @@
 $(document).ready(function() {
     'use strict';
-    $('#getRenewables').click(getRenewables)
+    $('#getRenewable').click(getRenewable)
 
-    function getrenewable() {
+    function getRenewable() {
         console.log('getRenewable called')
         $.getJSON('/renewables', function(response) {
             console.log(response);
