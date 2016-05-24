@@ -1,6 +1,6 @@
 $(document).ready(function() {
     'use strict';
-    $('#getRenewable').click(getRenewable)
+    $('#getRenewables').click(getRenewables)
 
     function getrenewable() {
         console.log('getRenewable called')
