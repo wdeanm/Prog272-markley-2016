@@ -1,2 +1,0 @@
-# FunctionThis
-by Charlie Calvert
