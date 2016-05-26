@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "test": "karma start",
-    "test-server": "node jasmine-runner.js",
+    "test-server": "nodemon jasmine-runner.js",
     "start": "nodemon ./bin/www"
   },
   "dependencies": {
