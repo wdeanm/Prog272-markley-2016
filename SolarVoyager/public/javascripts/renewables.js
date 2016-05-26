@@ -1,6 +1,3 @@
-/**
- * Created by bcuser on 5/18/16.
- */
 define(function() {
     var renewables = {
         color: "red",

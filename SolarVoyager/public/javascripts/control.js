@@ -49,7 +49,7 @@
  //   renewableByIndex
 });*/
 
-define(['jquery', 'work'], function($, work) {
+define(['jquery', 'work', 'about', 'renewables', 'renewablesbyindex', 'renewablesbyyear'], function($, work) {
     //Do setup work here
 
     function showBar() {
