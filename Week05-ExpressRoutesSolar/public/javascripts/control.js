@@ -13,9 +13,9 @@ $(document).ready(function() {
     }
 
     function getRenewableByIndex() {
-        console.log('getRenewable called')
-        var userInput = $('#getRenewableByIndex').val();
-        $.getJSON('/renewablesByIndex' + userInput, function (response) {
+        console.log('getRenewableByIndex called')
+        var userInput = $('#getIndex').val();
+        $.getJSON('/renewableByIndex/' + userInput, function (response) {
                 console.log(response);
                 $('#debug').html(JSON.stringify(response,null, 4));
             })
@@ -31,9 +31,10 @@ $(document).ready(function() {
     }
 
     function getRenewableByYear() {
-        console.log('getRenewable called')
-        var userInput = $('#getRenewableByYear').val();
-        $.getJSON('/renewableByYear' + userInput, function (response) {
+        console.log('getRenewableByYear called')
+        var userInput = $('#getYear').val();
+        console.log('user input' + userInput)
+        $.getJSON('/renewableByYear/' + userInput, function (response) {
                 console.log(response);
                 $('#debug').html(JSON.stringify(response,null, 4));
             })

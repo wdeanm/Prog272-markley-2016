@@ -28,15 +28,11 @@ router.get('/renewables', function(request, response) {
             });
             console.log(data);
         }
-        response.send({
-            result: 'Success',
-            renewables: data
-        })
 
     });
 });
 
-router.get('/renewablesByIndex/:id', function(request, response) {
+router.get('/renewableByIndex/:id', function(request, response) {
     console.log('Renewables by index called');
 
     fs.readFile('data/Renewable.json', 'utf8', function(err, data) {
@@ -47,20 +43,21 @@ router.get('/renewablesByIndex/:id', function(request, response) {
             });
         } else {
             var json = JSON.parse(data);
-            //console.log(json);
+            console.log(json);
             response.send({
                 result: 'Success',
                 renewables: json[parseInt(request.params.id)]
             });
-            // console.log(data);
+             console.log(json[parseInt(request.params.id)]);
         }
 
         /*  response.send ({ result: 'Success', renewables: data}) */
     });
 });
 
-router.get('/renewablesByYear/:id', function(request, response) {
+router.get('/renewableByYear/:id', function(request, response) {
     console.log('Renewables called by year');
+    var myYear = request.params.id;
 
     fs.readFile('data/Renewable.json', 'utf8', function(err, data) {
 
