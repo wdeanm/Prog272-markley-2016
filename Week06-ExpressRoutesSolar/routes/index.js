@@ -10,7 +10,6 @@ router.get('/', function(req, res, next) {
     });
 });
 
-
 router.get('/renewables', function(request, response) {
     console.log('Renewables called');
     fs.readFile('data/Renewable.json', 'utf8', function(err, data) {
@@ -81,6 +80,27 @@ router.get('/renewableByYear/:id', function(request, response) {
             });
         }
     })
+});
+
+router.get('/renewablesByIndexSorted/:id', function(request, response) {
+    console.log('Renewables by index Sorted');
+
+    fs.readFile('data/Renewable.json', 'utf8', function(err, data) {
+
+        if (err) {
+            response.send({
+                result: '404'
+            });
+        } else {
+            var json = JSON.parse(data);
+            console.log(json);
+            response.send({
+                result: 'Success',
+                renewables: json[parseInt(request.params.id)]
+            });
+            console.log(json[parseInt(request.params.id)]);
+        }
+    });
 });
 
 
