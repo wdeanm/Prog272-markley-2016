@@ -4,12 +4,11 @@ block content
   h1= title
   p Welcome to #{title}
 
-  button#getRenewable.basicDiv Get Renewable
   br
-  button#getRenewableByYear.basicDiv Get Renewable by Year
-    input#getYear(type='number', value='2011')
-  br
-  button#getRenewableByIndex.basicDiv Get Renewable by Index
-    input#getIndex(type='number', value='3')
+  button.homeMenu.btn.btn-primary Home
+  button.aboutMenu.btn.btn-success About
+  button.renewable.btn.btn-info Renewable
+  button.renewablesByIndexMenu.btn.btn-warning Renewables by Index
+  button.renewablesByYearMenu.btn.btn-danger Renewables by Year
 
-  pre#debug
+  #elf-view
