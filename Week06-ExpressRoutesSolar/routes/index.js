@@ -10,8 +10,8 @@ router.get('/', function(req, res, next) {
     });
 });
 
-router.get('/renewables', function(request, response) {
-  console.log('Renewables called');
+router.get('/renewable', function(request, response) {
+  console.log('Renewable called');
 
   fs.readFile('data/Renewable.json', 'utf8', function (err, data) {
 
@@ -31,29 +31,10 @@ router.get('/renewables', function(request, response) {
   });
 });
 
-router.get('/renewables', function(request, response) {
-    console.log('Renewables called');
-    fs.readFile('data/Renewable.json', 'utf8', function(err, data) {
-
-        if (err) {
-            response.send({
-                result: '404'
-            });
-        } else {
-            var json = JSON.parse(data);
-            console.log(json);
-            response.send({
-                result: 'Success',
-                renewables: json
-            });
-            console.log(data);
-        }
-    });
-});
 
 router.get('/renewablesByIndex/:id', function(request, response) {
     console.log('Renewables by index called');
-
+    var myIndex = request.params.id;
     fs.readFile('data/Renewable.json', 'utf8', function(err, data) {
 
         if (err) {
