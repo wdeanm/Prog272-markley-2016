@@ -10,17 +10,4 @@ block content
     button#renewablesByIndexButton.btn.btn-warning Renewables By Index
     button#renewablesByIndexYearButton.btn.btn-danger Renewables By Year
 
-    block content
-        h1= title
-        p Welcome to #{title}
-
-        #elf-view
-
-//
-  button#getRenewable All Renewables
-  input#renewableByIndex(type='number', value='2')
-  button#getRenewableByIndex Renewable by Index
-  input#renewableByYear(type='number', value='2010')
-  button#getRenewableByYear Renewable by Year
-
-  pre#debug
+    #elf-view

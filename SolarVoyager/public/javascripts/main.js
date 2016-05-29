@@ -8,17 +8,12 @@ requirejs.config({
         about: 'javascripts/about',
         renewables: 'javascripts/renewables/renewables',
         renewablesByIndex: 'javascripts/renewables/renewables-index',
-        renewablesBYYear: 'javascripts/renewables/renewables-year'
+        renewablesByYear: 'javascripts/renewables/renewables-year'
     }
 });
 
 requirejs(['jquery'], function($) {
-    requirejs(['bootstrap', "control", 'work', 'about', 'funcObj'], function(bootstrap, control, work, about, funcObj) {
+    requirejs(['bootstrap', "control"], function(bootstrap, control) {
         control.init();
     });
 });
-
-/*
-
-
- */
