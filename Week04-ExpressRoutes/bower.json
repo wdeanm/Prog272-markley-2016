@@ -13,6 +13,7 @@
   "homepage": "https://github.com/wdeanm/prog272-markley-2016",
   "moduleType": [],
   "dependencies": {
-    "jquery": "^2.2.3"
+    "jquery": "^2.2.3",
+    "bootstrap": "^3.3.6"
   }
 }
