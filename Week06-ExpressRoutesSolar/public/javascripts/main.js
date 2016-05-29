@@ -21,4 +21,3 @@ requirejs(['jquery'], function($) {
         control.init();
     });
 });
-

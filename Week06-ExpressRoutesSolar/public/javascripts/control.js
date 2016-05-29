@@ -12,7 +12,7 @@ define(['jquery', 'home', 'about', 'renewable', 'renewablesByIndex', 'renewables
             init: function () {
                 $('.homeMenu').click(home.init);
                 $('.aboutMenu').click(about.init);
-                $('.renewableMenu').click(renewable.init);
+                $('.renewable').click(renewable.init);
                 $('.renewablesByIndexMenu').click(renewablesByIndex.init);
                 $('.renewablesByYearMenu').click(renewablesByYear.init);
                 home.init();
@@ -20,5 +20,3 @@ define(['jquery', 'home', 'about', 'renewable', 'renewablesByIndex', 'renewables
         }
         return control;
     });
-
-
