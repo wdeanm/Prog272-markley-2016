@@ -62,7 +62,7 @@ define(['jquery', 'home', 'about', 'renewable', 'renewablesByIndex', 'renewables
             init: function () {
                 $('.homeMenu').click(home.init);
                 $('.aboutMenu').click(about.init);
-                $('.renewable').click(renewable.init);
+                $('.renewableMenu').click(renewable.init);
                 $('.renewablesByIndexMenu').click(renewablesByIndex.init);
                 $('.renewablesByYearMenu').click(renewablesByYear.init);
                 home.init();

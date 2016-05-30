@@ -6,11 +6,11 @@ var fs = require('fs');
 router.get('/', function(req, res, next) {
   'use strict';
   res.render('index', {
-    title: 'Week06-ExpressRoutesSolar-Markley'
+    title: 'Solar Voyager -  Markley'
   });
 });
 
-router.get('/renewables', function(request, response) {
+router.get('/renewable', function(request, response) {
   console.log('Renewables called');
   fs.readFile('data/Renewable.json', 'utf8', function(err, data) {
 
