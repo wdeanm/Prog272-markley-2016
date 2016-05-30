@@ -4,7 +4,7 @@
 define (function () {
     var renewable = {
         init: function () {
-            $('#elf-view').load('/renewable', function () {
+            $('#elf-view').load('/renewables/renewable', function () {
 
                 $ ('#getRenewable').click(getRenewable)
 

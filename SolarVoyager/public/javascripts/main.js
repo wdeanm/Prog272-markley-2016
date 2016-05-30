@@ -6,9 +6,9 @@ requirejs.config({
         control: 'javascripts/control',
         home: 'javascripts/home',
         about: 'javascripts/about',
-        renewable: 'javascripts/renewable',
-        renewablesByIndex: 'javascripts/renewablesByIndex',
-        renewablesByYear: 'javascripts/renewablesByYear'
+        renewable: 'javascripts/renewables/renewable',
+        renewablesByIndex: 'javascripts/renewables/renewablesByIndex',
+        renewablesByYear: 'javascripts/renewables/renewablesByYear'
     }
 });
 

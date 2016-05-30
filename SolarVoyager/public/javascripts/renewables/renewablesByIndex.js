@@ -4,7 +4,7 @@
 define (function () {
     var renewablesByIndex = {
         init: function () {
-            $('#elf-view').load('/renewablesByIndex', function () {
+            $('#elf-view').load('/renewables/renewablesByIndex', function () {
 
                 $ ('#getRenewablesByIndex').click(getRenewablesByIndex)
 

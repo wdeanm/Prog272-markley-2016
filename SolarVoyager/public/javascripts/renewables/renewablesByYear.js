@@ -4,7 +4,7 @@
 define (function () {
     var renewablesByYear = {
         init: function () {
-            $('#elf-view').load('/renewablesByYear', function () {
+            $('#elf-view').load('/renewables/renewablesByYear', function () {
 
                 $ ('#getRenewablesByYear').click(getRenewablesByYear)
 
