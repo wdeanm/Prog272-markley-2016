@@ -1,14 +1,20 @@
-define(function() {
-    var renewables = {
-        color: "red",
-        size: "big",
-        init: function() {
-            console.log(work.color);
-            $('#elf-view').load('/work', function() {
-                $('#display').html(work.color + ' ' + work.size);
+define (function () {
+    var renewable = {
+        init: function () {
+            $('#elf-view').load('/renewable', function () {
+
+                $ ('#getRenewable').click(getRenewable)
+
+
+                function getRenewable() {
+                    console.log('getRenewable called')
+                    $.getJSON('/renewables', function(response) {
+                        console.log(response);
+                        $('#debug').html(JSON.stringify(response, null, 4));
+                    })
+                }
             });
         }
     };
-    return work;
+    return renewable;
 });
-

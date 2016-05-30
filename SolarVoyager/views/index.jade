@@ -4,23 +4,11 @@ block content
     h1= title
     p Welcome to #{title}
 
-    button#workButton.btn.btn-primary Work
-    button#aboutButton.btn.btn-success AboutMain
-    button#renewablesButton.btn.btn-primary Renewables
-    button#renewablesByIndexButton.btn.btn-warning Renewables By Index
-    button#renewablesByIndexYearButton.btn.btn-danger Renewables By Year
+    br
+    button.homeMenu.btn.btn-primary Home
+    button.aboutMenu.btn.btn-success About
+    button.renewable.btn.btn-info Renewable
+    button.renewablesByIndexMenu.btn.btn-warning Renewables by Index
+    button.renewablesByYearMenu.btn.btn-danger Renewables by Year
 
-    block content
-        h1= title
-        p Welcome to #{title}
-
-        #elf-view
-
-//
-  button#getRenewable All Renewables
-  input#renewableByIndex(type='number', value='2')
-  button#getRenewableByIndex Renewable by Index
-  input#renewableByYear(type='number', value='2010')
-  button#getRenewableByYear Renewable by Year
-
-  pre#debug
+    #elf-view

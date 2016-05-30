@@ -48,30 +48,25 @@
 
  //   renewableByIndex
 });*/
+define(['jquery', 'home', 'about', 'renewable', 'renewablesByIndex', 'renewablesByYear'],
+    function ($, home, about, renewable, renewablesByIndex, renewablesByYear) {
 
-define(['jquery', 'work', 'about', 'renewables', 'renewablesbyindex', 'renewablesbyyear'], function($, work) {
-    //Do setup work here
-
-    function showBar() {
-        //console.log('Show Bar Clicks called now');
-        $('#display2').html('bar');
-    }
-
-    var control = {
-        color: "black",
-        size: "unisize",
-        setup: function() {
-            $(document).on('click', '#showClick', showBar);
-            $('#display2').html(control.color + ' - ' + control.size);
-        },
-        init: function() {
-            //console.log(this.color);
-         //   $('#aboutButton').click(about.init);
-          //  $('#workButton').click(work.init);
-         //   $('#elf-view').load('/main', this.setup);
-            work.init();
+        function showBar() {
+            $('#display2').html('bar');
         }
-    };
-
-    return control;
-});
+        var control = {
+            setup: function(){
+                $(document).on('click', '#showClick', showBar);
+                $('#display2').html(control.color + ' - ' + control.size);
+            },
+            init: function () {
+                $('.homeMenu').click(home.init);
+                $('.aboutMenu').click(about.init);
+                $('.renewable').click(renewable.init);
+                $('.renewablesByIndexMenu').click(renewablesByIndex.init);
+                $('.renewablesByYearMenu').click(renewablesByYear.init);
+                home.init();
+            }
+        }
+        return control;
+    });

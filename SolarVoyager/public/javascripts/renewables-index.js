@@ -1,36 +1,29 @@
-define(function() {
-    function getRenewableByIndex() {
-        console.log('getRenewableByIndex called')
-        var userInput = $('#getRenewableByIndex').val();
-        $.getJSON('/renewablesByIndex' + userInput, function (response) {
-                console.log(response);
-                $('#debug').html(JSON.stringify(response,null, 4));
-            })
-            .done(function () {
-                console.log('second success')
-            })
-            .fail(function (a,b,c) {
-                console.log('Error, a,b,c')
-            })
-            .always(function () {
-                console.log('complete')
-            })
-    }
+define (function () {
+    var renewablesByIndex = {
+        init: function () {
+            $('#elf-view').load('/renewablesByIndex', function () {
 
-    var renewablesbyindex = {
-        color: "red",
-        size: "big",
-        init: function() {
-            console.log(work.color);
-            $('#elf-view').load('/renewablesByIndex', function() {
-                $('#display').html(renewablesByIndex.color);
-                $('#display2').html(renewablesByIndex.size);
-                $("#renewableByIndex").change(function () {
-                    getRenewableByIndex()
+                $ ('#getRenewablesByIndex').click(getRenewablesByIndex)
 
-                })
+                function getRenewablesByIndex() {
+                    console.log('getRenewablesByIndex called')
+                    var userInput = $('#getIndex').val();
+                    $.getJSON('/renewablesByIndex/' + userInput, function (response) {
+                        console.log(response);
+                        $('#debug').html(JSON.stringify(response,null, 4));
+                    })
+                        .done(function () {
+                            console.log('second success')
+                        })
+                        .fail(function (a,b,c) {
+                            console.log('Error, a,b,c')
+                        })
+                        .always(function () {
+                            console.log('complete')
+                        })
+                }
             });
         }
     };
-    return renewablesbyindex;
+    return renewablesByIndex;
 });
