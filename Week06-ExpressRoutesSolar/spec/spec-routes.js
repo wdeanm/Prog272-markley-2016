@@ -5,10 +5,10 @@ var request = require('supertest');
 var app = require('../app');
 var energyUtils = require('../routes/energy-utils');
 
-fdescribe('Elvenware Routes Suite', function() {
+describe('Elvenware Routes Suite', function() {
     'use strict';
 
-    it('shows we can test', function() {
+    fit('shows we can test', function() {
         expect(true).toBe(true);
     });
 
@@ -21,8 +21,6 @@ fdescribe('Elvenware Routes Suite', function() {
                 if (err) throw err;
                 done();
             });
-
-
     });
 
     fit('call renewables routes and see that first object body has Year set to 2017', function(done) {
@@ -94,25 +92,5 @@ fdescribe('Elvenware Routes Suite', function() {
                 });
         });
         */
-/*
-    it('call renewableByYear and get renewable object with specific year', function(done) {
-        request(app)
-            .get('/renewablesByYear/2016')
-            .expect(200)
-            .expect('Content-Type', /json/)
-            .expect(function(response) {
-                // console.log('expect called');
-                expect(response.body.result).toBe('Success');
-                //console.log(response.body.renewables);
-                var renewable = response.body.renewable;
-                expect(response.body.renewables.Year).toBe('2016');
-            })
-            .end(function(err, res) {
-                if (err) {
-                    throw err;
-                }
-                done();
-            });
-    });
-*/
+
 });
