@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
   });
 });
 
-router.get('/renewable', function(request, response) {
+router.get('/renewables/renewable', function(request, response) {
   console.log('Renewables called');
   fs.readFile('data/Renewable.json', 'utf8', function(err, data) {
 
@@ -31,7 +31,7 @@ router.get('/renewable', function(request, response) {
   });
 });
 
-router.get('/renewablesByIndex/:id', function(request, response) {
+router.get('/renewables/renewablesByIndex/:id', function(request, response) {
   console.log('Renewables by index called');
 
   fs.readFile('data/Renewable.json', 'utf8', function(err, data) {
@@ -54,7 +54,7 @@ router.get('/renewablesByIndex/:id', function(request, response) {
   });
 });
 
-router.get('/renewablesByYear/:id', function(request, response) {
+router.get('/renewables/renewablesByYear/:id', function(request, response) {
   console.log('Renewables called by year');
   var myYear = request.params.id;
 
@@ -82,7 +82,7 @@ router.get('/renewablesByYear/:id', function(request, response) {
   })
 });
 
-router.get('/renewablesByIndexSorted/:id', function(request, response) {
+router.get('/renewables/renewablesByIndexSorted/:id', function(request, response) {
   console.log('Renewables by index Sorted');
 
   fs.readFile('data/Renewable.json', 'utf8', function(err, data) {
@@ -103,7 +103,7 @@ router.get('/renewablesByIndexSorted/:id', function(request, response) {
   });
 });
 
-router.get('/renewables/:id', function(request, response) {
+router.get('/:id', function(request, response) {
   response.render('renewables/' + request.params.id, { title: 'ElfComponent' });
 });
 

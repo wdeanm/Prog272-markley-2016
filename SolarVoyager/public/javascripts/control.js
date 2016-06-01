@@ -48,7 +48,7 @@
 
  //   renewableByIndex
 });*/
-define(['jquery', 'home', 'about', 'renewables/renewable', 'renewables/renewablesByIndex', 'renewables/renewablesByYear'],
+define(['jquery', 'home', 'about', 'renewable', 'renewablesByIndex', 'renewablesByYear'],
     function ($, home, about, renewable, renewablesByIndex, renewablesByYear) {
 
         function showBar() {
