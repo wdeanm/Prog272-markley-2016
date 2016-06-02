@@ -3,6 +3,8 @@
  */
 define (function () {
     var renewablesByIndex = {
+        color: 'red',
+        size: 'big',
         init: function () {
             $('#elf-view').load('/renewables/renewablesByIndex', function () {
 
