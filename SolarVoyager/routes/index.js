@@ -103,8 +103,12 @@ router.get('/renewables/renewablesByIndexSorted/:id', function(request, response
   });
 });
 
-router.get('/:id', function(request, response) {
+router.get('/renewables/:id', function(request, response) {
   response.render('renewables/' + request.params.id, { title: 'ElfComponent' });
+});
+
+router.get('/:id', function(request, response) {
+  response.render(request.params.id, { title: 'ElfComponent' });
 });
 
 module.exports = router;
