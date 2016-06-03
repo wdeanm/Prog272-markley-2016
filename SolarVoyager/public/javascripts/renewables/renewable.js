@@ -10,6 +10,9 @@ define (function () {
             renewablesList = response.renewables;
             showRenewable(renewablesList[index]);
           //  $('#debug').html(JSON.stringify(response, null, 4));
+            $('#renewableByIndex').change(function() {
+                getRenewableByIndex();
+            });
         })
     }
 
