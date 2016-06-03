@@ -4,8 +4,8 @@
 define (function () {
 
     function getRenewable() {
-        console.log('getRenewable called')
-        $.getJSON('/renewables', function(response) {
+        console.log('renewable.js: getRenewable called')
+        $.getJSON('renewables/renewable', function(response) {
             console.log(response);
             $('#debug').html(JSON.stringify(response, null, 4));
         })

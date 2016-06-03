@@ -4,14 +4,14 @@
 define (function () {
     var renewablesByIndex = {
         init: function () {
-            $('#elf-view').load('/renewables/renewablesByIndex', function () {
+            $('#elf-view').load('/renewables/renewables-By-Index', function () {
 
                 $ ('#getRenewablesByIndex').click(getRenewablesByIndex)
 
                 function getRenewablesByIndex() {
-                    console.log('getRenewablesByIndex called')
+                    console.log('renewablesByIndex.js: getRenewablesByIndex called')
                     var userInput = $('#getIndex').val();
-                    $.getJSON('/renewablesByIndex/' + userInput, function (response) {
+                    $.getJSON('renewables/renewablesByIndex/' + userInput, function (response) {
                         console.log(response);
                         $('#debug').html(JSON.stringify(response,null, 4));
                     })

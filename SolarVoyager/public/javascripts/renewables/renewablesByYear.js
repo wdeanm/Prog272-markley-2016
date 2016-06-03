@@ -4,15 +4,15 @@
 define (function () {
     var renewablesByYear = {
         init: function () {
-            $('#elf-view').load('/renewables/renewablesByYear', function () {
+            $('#elf-view').load('/renewables/renewables-By-Year', function () {
 
                 $ ('#getRenewablesByYear').click(getRenewablesByYear)
 
                 function getRenewablesByYear() {
-                    console.log('getRenewablesByYear called')
+                    console.log('renewablesbyYear.js: getRenewablesByYear called')
                     var userInput = $('#getYear').val();
                     console.log('user input' + userInput)
-                    $.getJSON('/renewablesByYear/' + userInput, function (response) {
+                    $.getJSON('renewables/renewablesByYear/' + userInput, function (response) {
                         console.log(response);
                         $('#debug').html(JSON.stringify(response,null, 4));
                     })
