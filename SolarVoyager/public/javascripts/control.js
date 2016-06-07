@@ -48,8 +48,10 @@
 
  //   renewableByIndex
 });*/
-define(['jquery', 'home', 'about', 'renewable', 'renewablesByIndex', 'renewablesByYear'],
-    function ($, home, about, renewable, renewablesByIndex, renewablesByYear) {
+define(['jquery', 'home', 'about', 'renewable','renewablesByIndex',
+    'renewablesByYear', 'energyOverview', 'energyTypes'],
+    function ($, home, about, renewable, renewablesByIndex,
+              renewablesByYear, energyOverview, energyTypes) {
 
         function showBar() {
             $('#display2').html('bar');
@@ -65,6 +67,9 @@ define(['jquery', 'home', 'about', 'renewable', 'renewablesByIndex', 'renewables
                 $('.renewableMenu').click(renewable.init);
                 $('.renewablesByIndexMenu').click(renewablesByIndex.init);
                 $('.renewablesByYearMenu').click(renewablesByYear.init);
+                $('.energyOverviewMenu').click(energyOverview.init);
+                $('.energyTypesMenu').click(energyTypes.init);
+
                 home.init();
             }
         }
