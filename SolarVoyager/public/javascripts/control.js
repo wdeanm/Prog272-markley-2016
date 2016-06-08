@@ -69,7 +69,6 @@ define(['jquery', 'home', 'about', 'renewable','renewablesByIndex',
                 $('.renewablesByYearMenu').click(renewablesByYear.init);
                 $('.energyOverviewMenu').click(energyOverview.init);
                 $('.energyTypesMenu').click(energyTypes.init);
-
                 home.init();
             }
         }
