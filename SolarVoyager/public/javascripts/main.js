@@ -9,8 +9,8 @@ requirejs.config({
         renewable: 'javascripts/renewables/renewable',
         renewablesByIndex: 'javascripts/renewables/renewablesByIndex',
         renewablesByYear: 'javascripts/renewables/renewablesByYear',
-        energyoverview: 'javascripts/high-tech-energy/energyOverview',
-        energytypes: 'javascripts/high-tech-energy/energyTypes'
+        energyOverview: 'javascripts/high-tech-energy/energyOverview',
+        energyTypes: 'javascripts/high-tech-energy/energyTypes'
     }
 });
 
