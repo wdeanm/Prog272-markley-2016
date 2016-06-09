@@ -67,10 +67,12 @@ define(['jquery', 'home', 'about', 'renewable','renewablesByIndex',
                 $('.renewableMenu').click(renewable.init);
                 $('.renewablesByIndexMenu').click(renewablesByIndex.init);
                 $('.renewablesByYearMenu').click(renewablesByYear.init);
-                $('.energyOverviewMenu').click(energyOverview.init);
-                $('.energyTypesMenu').click(energyTypes.init);
+                $('.highTechEnergyOverviewMenu').click(energyOverview.init);
+                $('.highTechEnergyTypesMenu').click(energyTypes.init);
                 home.init();
             }
         }
         return control;
     });
+
+

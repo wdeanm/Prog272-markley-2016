@@ -20,13 +20,20 @@ block content
                             b.caret
                         ul.dropdown-menu(role='menu')
                             li.trigger-collapse(ng-class="{ active: isActive('/renewables')}")
-                                a.renewablesMenu Renewables
-                                    // YOU FILL IN THESE TWO ITEMS
+                                a.renewablesMenu Renewable
+                            li.trigger-collapse(ng-class="{ active: isActive('/renewables')}")
+                                a.renewablesByIndexMenu Renewables by Index
+                            li.trigger-collapse(ng-class="{ active: isActive('/renewables')}")
+                                a.renewablesByYearMenu Renewables by Year
                     li.collapse.dropdown
                         a.dropdown-toggle(data-toggle='dropdown')
                             | Energy
                             b.caret
                         ul.dropdown-menu(role='menu')
+                            li.trigger-collapse(ng-class="{ active: isActive('/high-tech-energy')}")
+                                a.highTechEnergyOverviewMenu Energy Overview
+                            li.trigger-collapse(ng-class="{ active: isActive('/high-tech-energy')}")
+                                a.highTechEnergyOverviewMenu Energy Types
                             // BASED ON THE DROP DOWN SHOWN ABOVE
                             // YOU DEFINE EnerygyOverview and EnergyTypes
                     li.trigger-collapse(ng-class="{ active: isActive('/about')}")
@@ -35,12 +42,13 @@ block content
 
         h1= title
         p Welcome to #{title}
-
-        button.homeMenu.btn.btn-primary Home
-        button.renewablesMenu.btn.btn-info Renewables
-        button.renewablesByIndexMenu.btn.btn-danger Renewables by Index
-        button.renewablesByYearMenu.btn.btn-warning Renewables by Year
-        button.aboutMenu.btn.btn-success About
+        div
+            button.homeMenu.btn.btn-primary Home
+            button.aboutMenu.btn.btn-success About
+        div
+            button.renewablesMenu.btn.btn-info Renewables
+            button.renewablesByIndexMenu.btn.btn-danger Renewables by Index
+            button.renewablesByYearMenu.btn.btn-warning Renewables by Year
         div
             button.highTechEnergyOverviewMenu.btn.btn-info High Tech Energy Overview
             button.highTechEnergyTypesMenu.btn.btn-danger High Tech Energy Types

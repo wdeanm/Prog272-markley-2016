@@ -1,11 +1,36 @@
 /**
  * Created by bcuser on 6/6/16.
  */
-/**
- * Created by bcuser on 5/29/16.
- * 
- * energyOverview.js
- */
+define (function () {
+    var energyOverview= {
+        init: function () {
+            $('#elf-view').load('/high-tech-energy/energy-overview-page', function () {
+
+                $ ('#getEnergyOverview').click(getEnergyOverview)
+
+                function getEnergyOverview() {
+                    console.log('EnergyOverview.js: getEnergyOverview called')
+                    var userInput = $('#getIndex').val();
+                    $.getJSON('high-tech-energy/energyOverview/' + userInput, function (response) {
+                        console.log(response);
+                        $('#debug').html(JSON.stringify(response,null, 4));
+                    })
+                        .done(function () {
+                            console.log('second success')
+                        })
+                        .fail(function (a,b,c) {
+                            console.log('Error, a,b,c')
+                        })
+                        .always(function () {
+                            console.log('complete')
+                        })
+                }
+            });
+        }
+    };
+    return energyOverview;
+});
+/*
 define (function () {
 
     function getEnergyOverview() {
@@ -73,3 +98,4 @@ define (function () {
     };
     return hightechenergy;
 });
+    */
