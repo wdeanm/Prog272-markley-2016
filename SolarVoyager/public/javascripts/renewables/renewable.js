@@ -5,6 +5,7 @@ define (function () {
 
     function getRenewable() {
         console.log('renewable.js: getRenewable called')
+        
         $.getJSON('renewables/renewable', function(response) {
             console.log(response);
             renewablesList = response.renewables;
