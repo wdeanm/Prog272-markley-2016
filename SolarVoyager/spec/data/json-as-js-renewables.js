@@ -1,8 +1,7 @@
 /**
  * Created by bcuser on 5/11/16.
  */
-module.exports= [
-    {
+module.exports = [{
         "Year": "2017",
         "Solar (quadrillion Btu)": "0.8045307",
         "Geothermal (quadrillion Btu)": "0.2349284",
@@ -11,8 +10,7 @@ module.exports= [
         "Liquid biofuels (quadrillion Btu)": "1.2329197",
         "Wood biomass (quadrillion Btu)": "1.9860924",
         "Hydropower (quadrillion Btu)": "2.5859957"
-    },
-    {
+    }, {
         "Year": "2016",
         "Solar (quadrillion Btu)": "0.6298938",
         "Geothermal (quadrillion Btu)": "0.232438",
@@ -21,8 +19,7 @@ module.exports= [
         "Liquid biofuels (quadrillion Btu)": "1.2406718727",
         "Wood biomass (quadrillion Btu)": "1.9724914",
         "Hydropower (quadrillion Btu)": "2.5965158"
-    },
-    {
+    }, {
         "Year": "2015",
         "Solar (quadrillion Btu)": "0.532293912",
         "Geothermal (quadrillion Btu)": "0.22367033",
@@ -31,8 +28,7 @@ module.exports= [
         "Liquid biofuels (quadrillion Btu)": "1.2204771324",
         "Wood biomass (quadrillion Btu)": "2.059217456",
         "Hydropower (quadrillion Btu)": "2.388612049"
-    },
-    {
+    }, {
         "Year": "2014",
         "Solar (quadrillion Btu)": "0.420069628",
         "Geothermal (quadrillion Btu)": "0.214489708",
@@ -41,8 +37,7 @@ module.exports= [
         "Liquid biofuels (quadrillion Btu)": "1.1806211798",
         "Wood biomass (quadrillion Btu)": "2.229612055",
         "Hydropower (quadrillion Btu)": "2.466576574"
-    },
-    {
+    }, {
         "Year": "2013",
         "Solar (quadrillion Btu)": "0.305189657",
         "Geothermal (quadrillion Btu)": "0.214006166",
@@ -51,8 +46,7 @@ module.exports= [
         "Liquid biofuels (quadrillion Btu)": "1.0965447003",
         "Wood biomass (quadrillion Btu)": "2.169543485",
         "Hydropower (quadrillion Btu)": "2.562382317"
-    },
-    {
+    }, {
         "Year": "2012",
         "Solar (quadrillion Btu)": "0.227349746",
         "Geothermal (quadrillion Btu)": "0.211592042",
@@ -61,8 +55,7 @@ module.exports= [
         "Liquid biofuels (quadrillion Btu)": "1.0906491156",
         "Wood biomass (quadrillion Btu)": "2.010265721",
         "Hydropower (quadrillion Btu)": "2.628701965"
-    },
-    {
+    }, {
         "Year": "2011",
         "Solar (quadrillion Btu)": "0.171085654",
         "Geothermal (quadrillion Btu)": "0.212310919",
@@ -71,8 +64,7 @@ module.exports= [
         "Liquid biofuels (quadrillion Btu)": "1.1495521148",
         "Wood biomass (quadrillion Btu)": "2.010246451",
         "Hydropower (quadrillion Btu)": "3.102852243"
-    },
-    {
+    }, {
         "Year": "2010",
         "Solar (quadrillion Btu)": "0.125900857",
         "Geothermal (quadrillion Btu)": "0.207978644",
@@ -81,8 +73,7 @@ module.exports= [
         "Liquid biofuels (quadrillion Btu)": "1.0975466584",
         "Wood biomass (quadrillion Btu)": "1.98068689",
         "Hydropower (quadrillion Btu)": "2.538541145"
-    },
-    {
+    }, {
         "Year": "2009",
         "Solar (quadrillion Btu)": "0.09776564",
         "Geothermal (quadrillion Btu)": "0.200184503",
@@ -91,8 +82,7 @@ module.exports= [
         "Liquid biofuels (quadrillion Btu)": "0.90231796406",
         "Wood biomass (quadrillion Btu)": "1.931010018",
         "Hydropower (quadrillion Btu)": "2.66882412"
-    },
-    {
+    }, {
         "Year": "2008",
         "Solar (quadrillion Btu)": "0.088767018",
         "Geothermal (quadrillion Btu)": "0.192433129",
@@ -101,8 +91,7 @@ module.exports= [
         "Liquid biofuels (quadrillion Btu)": "0.78437286524",
         "Wood biomass (quadrillion Btu)": "2.058985068",
         "Hydropower (quadrillion Btu)": "2.511108471"
-    },
-    {
+    }, {
         "Year": "2007",
         "Solar (quadrillion Btu)": "0.075657103",
         "Geothermal (quadrillion Btu)": "0.185774215",
@@ -111,8 +100,7 @@ module.exports= [
         "Liquid biofuels (quadrillion Btu)": "0.54947502797",
         "Wood biomass (quadrillion Btu)": "2.088774754",
         "Hydropower (quadrillion Btu)": "2.446388587"
-    },
-    {
+    }, {
         "Year": "2006",
         "Solar (quadrillion Btu)": "0.06844104",
         "Geothermal (quadrillion Btu)": "0.18120028",
@@ -125,4 +113,3 @@ module.exports= [
 
 ];
 //module.exports=renewables;
-

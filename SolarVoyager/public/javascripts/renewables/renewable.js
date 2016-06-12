@@ -1,19 +1,19 @@
 /**
  * Created by bcuser on 5/29/16.
  */
-define (function () {
+define(function() {
 
     function getRenewable() {
-        console.log('renewable.js: getRenewable called')
+        console.log('renewable.js: getRenewable called');
         $.getJSON('renewables/renewable', function(response) {
             console.log(response);
             renewablesList = response.renewables;
             showRenewable(renewablesList[index]);
-          //  $('#debug').html(JSON.stringify(response, null, 4));
+            //  $('#debug').html(JSON.stringify(response, null, 4));
             $('#renewableByIndex').change(function() {
                 getRenewableByIndex();
             });
-        })
+        });
     }
 
     function indexChange(test) {
@@ -61,10 +61,10 @@ define (function () {
     }
 
     var renewable = {
-        init: function () {
-            $('#elf-view').load('/renewables/renewable-page', function () {
+        init: function() {
+            $('#elf-view').load('/renewables/renewable-page', function() {
 
-                $ ('#getRenewable').click(getRenewable)
+                $('#getRenewable').click(getRenewable)
                 getRenewable();
 
             });

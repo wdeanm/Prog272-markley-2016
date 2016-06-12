@@ -1,26 +1,26 @@
 /**
  * Created by bcuser on 6/6/16.
  */
-define (function () {
+define(function() {
 
     function getEnergyOverview() {
-        console.log('getEnergyOverview.js: getEnergyOverview called')
+        console.log('getEnergyOverview.js: getEnergyOverview called');
         $.getJSON('high-tech-energy/energy-overview', function(response) {
             console.log(response);
-            energyOverviewList = response.high-tech-energy;
-            showenergy-overview(energyOverviewList[index]);
+            energyOverviewList = response.high - tech - energy;
+            showenergy - overview(energyOverviewList[index]);
             //  $('#debug').html(JSON.stringify(response, null, 4));
             $('#energyOverviewByIndex').change(function() {
                 getenergyOverviewByIndex();
             });
-        })
+        });
     }
 
     function indexChange(test) {
         if (test < 12 && test >= 0) {
             index = test;
             $('#indexInput').val(index);
-            showenergy-overview(energyOverviewList[index]);
+            showenergy - overview(energyOverviewList[index]);
         }
     }
 
@@ -37,13 +37,13 @@ define (function () {
 
     function getSimpleKeys(hightechenergy) {
         return {
-            MSN: hightechenergy["MSN"],
-            YYYYMM: hightechenergy["YYYYMM"],
-            Value: hightechenergy["Value"],
-            Column_order: hightechenergy["Column_order"],
-            Description: hightechenergy["Description"],
-            Unit: hightechenergy["Unit"]
-        }
+            MSN: hightechenergy.MSN,
+            YYYYMM: hightechenergy.YYYYMM,
+            Value: hightechenergy.Value,
+            Column_order: hightechenergy.Column_order,
+            Description: hightechenergy.Description,
+            Unit: hightechenergy.Unit
+        };
     }
 
     function showRenewable(hightechenergy) {
@@ -57,10 +57,10 @@ define (function () {
     }
 
     var hightechenergy = {
-        init: function () {
-            $('#elf-view').load('/high-tech-energy/energy-overview-page', function () {
+        init: function() {
+            $('#elf-view').load('/high-tech-energy/energy-overview-page', function() {
 
-                $ ('#getEnergyOverview').click(getEnergyOverview)
+                $('#getEnergyOverview').click(getEnergyOverview);
                 getEnergyOverview();
 
             });
