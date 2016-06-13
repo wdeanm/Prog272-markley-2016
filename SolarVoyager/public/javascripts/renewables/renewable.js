@@ -64,7 +64,17 @@ define(function() {
 
                 $('#getRenewable').click(getRenewable);
                 getRenewable();
-
+                $('#minusButton').click(function() {
+                    $('#indexInput').val(parseInt($('#indexInput').val()) - 1);
+                    buttonChange();
+                });
+                $('#plusButton').click(function() {
+                    $('#indexInput').val(parseInt($('#indexInput').val()) + 1);
+                    buttonChange();
+                });
+                $('#indexInput').change(function() {
+                    indexButtonChange();
+                });
             });
         }
     };
