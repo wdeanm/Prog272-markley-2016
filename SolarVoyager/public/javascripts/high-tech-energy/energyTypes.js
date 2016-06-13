@@ -2,14 +2,16 @@ define(function() {
     'use strict';
 
     function getEnergyOverview() {
-        console.log('getEnergyOverview.js: getEnergyOverview called');
-        $.getJSON('high-tech-energy/energy-overview', function(response) {
+        console.log('getEnergyTypes.js: getEnergyTypes called');
+        $.getJSON('high-tech-energy/energy-types', function(response) {
+            /*     $.getJSON('high-tech-energy/energy-overview', function(response) { */
+            /*     $.getJSON('high-tech-energy/energy-overview', function(response) { */
             console.log(response);
             var energyOverviewList = response.high - tech - energy;
             showenergy - overview(energyOverviewList[index]);
             //  $('#debug').html(JSON.stringify(response, null, 4));
             $('#energyOverviewByIndex').change(function() {
-                getenergyOverviewByIndex();
+                getEnergyOverviewByIndex();
             });
         });
     }
@@ -56,11 +58,9 @@ define(function() {
 
     var hightechenergy = {
         init: function() {
-            $('#elf-view').load('/high-tech-energy/energy-overview-page', function() {
-
-                $('#getEnergyOverview').click(getEnergyOverview);
-                getEnergyOverview();
-
+            $('#elf-view').load('/high-tech-energy/energy-types-page', function() {
+                $('#getEnergyTypes').click(getEnergyTypes);
+                getEnergyTypes();
             });
         }
     };

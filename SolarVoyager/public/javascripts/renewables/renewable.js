@@ -50,12 +50,12 @@ define(function() {
         renewable = getSimpleKeys(renewable);
         $('#yearView').val(renewable.year);
         $('#solarView').val(renewable.solar);
-        $('#geoView').val(renewable.solar);
-        $('#otherBiomassView').val(renewable.solar);
-        $('#windView').val(renewable.solar);
-        $('#liquidBiofuelsView').val(renewable.solar);
-        $('#woodView').val(renewable.solar);
-        $('#hydropowerView').val(renewable.solar);
+        $('#geoView').val(renewable.geothermal);
+        $('#otherBiomassView').val(renewable.otherbiomass);
+        $('#windView').val(renewable.windpower);
+        $('#liquidBiofuelsView').val(renewable.liquidbiofuels);
+        $('#woodView').val(renewable.woodbiomass);
+        $('#hydropowerView').val(renewable.hydropower);
     }
 
     var renewable = {

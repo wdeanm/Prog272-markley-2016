@@ -6,7 +6,6 @@ define(function() {
     var energyOverview = {
         init: function() {
             $('#elf-view').load('/high-tech-energy/energy-overview-page', function() {
-
                 $('#getEnergyOverview').click(getEnergyOverview);
 
                 function getEnergyOverview() {
