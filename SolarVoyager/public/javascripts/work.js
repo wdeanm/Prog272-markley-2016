@@ -2,9 +2,10 @@
  * Created by bcuser on 5/18/16.
  */
 define(function() {
+    'use strict';
     var work = {
-        color: "red",
-        size: "big",
+        color: 'red',
+        size: 'big',
         init: function() {
             console.log(work.color);
             $('#elf-view').load('/work', function() {

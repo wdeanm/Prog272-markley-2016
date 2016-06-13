@@ -1,13 +1,11 @@
-/**
- * Created by bcuser on 5/29/16.
- */
 define(function() {
+    'use strict';
 
     function getRenewable() {
         console.log('renewable.js: getRenewable called');
         $.getJSON('renewables/renewable', function(response) {
             console.log(response);
-            renewablesList = response.renewables;
+            var renewablesList = response.renewables;
             showRenewable(renewablesList[index]);
             //  $('#debug').html(JSON.stringify(response, null, 4));
             $('#renewableByIndex').change(function() {
@@ -37,15 +35,15 @@ define(function() {
 
     function getSimpleKeys(renewable) {
         return {
-            year: renewable["Year"],
-            solar: renewable["Solar (quadrillion Btu)"],
-            geothermal: renewable["Geothermal (quadrillion Btu)"],
-            otherbiomass: renewable["Other biomass (quadrillion Btu))"],
-            windpower: renewable["Wind power (quadrillion Btu)"],
-            liquidbiofuels: renewable["Liquid biofuels (quadrillion Btu)"],
-            woodbiomass: renewable["Wood biomass (quadrillion Btu)"],
-            hydropower: renewable["Hydropower (quadrillion Btu)"]
-        }
+            year: renewable.Year,
+            solar: renewable['Solar (quadrillion Btu)'],
+            geothermal: renewable['Geothermal (quadrillion Btu)'],
+            otherbiomass: renewable['Other biomass (quadrillion Btu))'],
+            windpower: renewable['Wind power (quadrillion Btu)'],
+            liquidbiofuels: renewable['Liquid biofuels (quadrillion Btu)'],
+            woodbiomass: renewable['Wood biomass (quadrillion Btu)'],
+            hydropower: renewable['Hydropower (quadrillion Btu)']
+        };
     }
 
     function showRenewable(renewable) {
@@ -64,7 +62,7 @@ define(function() {
         init: function() {
             $('#elf-view').load('/renewables/renewable-page', function() {
 
-                $('#getRenewable').click(getRenewable)
+                $('#getRenewable').click(getRenewable);
                 getRenewable();
 
             });

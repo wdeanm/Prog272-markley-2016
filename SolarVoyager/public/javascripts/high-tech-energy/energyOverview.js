@@ -2,6 +2,7 @@
  * Created by bcuser on 6/6/16.
  */
 define(function() {
+    'use strict';
     var energyOverview = {
         init: function() {
             $('#elf-view').load('/high-tech-energy/energy-overview-page', function() {

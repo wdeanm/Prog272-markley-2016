@@ -1,13 +1,11 @@
-/**
- * Created by bcuser on 6/6/16.
- */
 define(function() {
+    'use strict';
 
     function getEnergyOverview() {
         console.log('getEnergyOverview.js: getEnergyOverview called');
         $.getJSON('high-tech-energy/energy-overview', function(response) {
             console.log(response);
-            energyOverviewList = response.high - tech - energy;
+            var energyOverviewList = response.high - tech - energy;
             showenergy - overview(energyOverviewList[index]);
             //  $('#debug').html(JSON.stringify(response, null, 4));
             $('#energyOverviewByIndex').change(function() {

@@ -81,7 +81,6 @@ describe('Elvenware Routes Suite', function() {
             });
     });
 
-
     it('call renewableByYear and get renewable object with specific year', function(done) {
         request(app)
             .get('/renewablesByYear/2016')

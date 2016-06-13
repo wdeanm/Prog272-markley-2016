@@ -16,8 +16,7 @@ describe('Elvenware Energy Utils Suite', function() {
     it('confirems the number of properties in the object', function() {
         console.log(renewables[0]);
         var sortedArray = energyUtils.objectToArray((renewables[0]));
-        expect(sortedArray.length).toBe(8)
-
+        expect(sortedArray.length).toBe(8);
     });
 
     it('objectToArray confirm works', function() {
@@ -25,7 +24,6 @@ describe('Elvenware Energy Utils Suite', function() {
         for (var i = 0; i < sortedArray.length - 1; i++) {
             console.log(sortedArray[i]);
             expect(sortedArray[i][1]).toBeLessThan(sortedArray[i + 1][1]);
-
         }
     });
 });

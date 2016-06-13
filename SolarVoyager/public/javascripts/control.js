@@ -3,6 +3,8 @@ define(['jquery', 'home', 'about', 'renewable', 'renewablesByIndex',
     ],
     function($, home, about, renewable, renewablesByIndex,
         renewablesByYear, energyOverview, energyTypes) {
+        'use strict';
+
         function showBar() {
             $('#display2').html('bar');
         }
