@@ -10,7 +10,8 @@ module.exports = function(grunt) {
 
             options: {
                 ignores: [
-                    '**/node_modules/**', '**/components/**', '**/source/**'
+                    '**/node_modules/**', '**/components/**',
+                    '**/data/**'
                 ],
                 reporter: require('jshint-stylish'),
                 strict: true,
