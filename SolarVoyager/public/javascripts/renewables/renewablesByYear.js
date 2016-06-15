@@ -6,7 +6,6 @@ define(function() {
     var renewablesByYear = {
         init: function() {
             $('#elf-view').load('/renewables/renewables-By-Year', function() {
-
                 $('#getRenewablesByYear').click(getRenewablesByYear);
 
                 function getRenewablesByYear() {
@@ -27,7 +26,6 @@ define(function() {
                             console.log('complete');
                         });
                 }
-
             });
         }
     };

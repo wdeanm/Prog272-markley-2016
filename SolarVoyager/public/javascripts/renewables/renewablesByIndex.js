@@ -11,6 +11,7 @@ define(function() {
                 function getRenewablesByIndex() {
                     console.log('renewablesByIndex.js: getRenewablesByIndex called');
                     var userInput = $('#getIndex').val();
+                    console.log('user input' + userInput);
                     $.getJSON('renewables/renewablesByIndex/' + userInput, function(response) {
                             console.log(response);
                             $('#debug').html(JSON.stringify(response, null, 4));

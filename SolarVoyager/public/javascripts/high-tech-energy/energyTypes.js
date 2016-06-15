@@ -1,9 +1,9 @@
 define(function() {
     'use strict';
 
-    function getEnergyOverview() {
+    function getEnergyTypes() {
         console.log('getEnergyTypes.js: getEnergyTypes called');
-        $.getJSON('high-tech-energy/energy-types', function(response) {
+        $.getJSON('high-tech-energy/energy-types-page', function(response) {
             console.log(response);
             var energyOverviewList = response.high - tech - energy;
             var showenergy = overview(energyOverviewList[index]);
@@ -24,7 +24,6 @@ define(function() {
 
     var indexButtonChange = function(event) {
         var test = event.data.value + index;
-
         indexChange(test);
     };
 
