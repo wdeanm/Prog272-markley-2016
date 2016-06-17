@@ -8,7 +8,7 @@ var bodyParser = require('body-parser');
 //var renewables = require('./routes/renewables');
 var routes = require('./routes/index');
 var users = require('./routes/users');
-var database = require('./routes/database-settings');
+//var database = require('./routes/database-settings');
 
 var app = express();
 
@@ -29,7 +29,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 //app.use('/renewables', renewables);
 app.use('/', routes);
 app.use('/users', users);
-app.use('/database-settings.js');
+//app.use('/database-settings.js');
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
